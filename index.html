@@ -3,14 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NovaShop</title>
+  <title>NovaShop 🚀</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; padding:20px; background:#f7f7f7; }
+    header { display:flex; align-items:center; justify-content:space-between; margin-bottom:20px; }
+    header img { height:50px; border-radius:8px; margin-right:10px; }
+    header h1 { display:flex; align-items:center; gap:10px; margin:0; }
+    nav a { margin:0 10px; text-decoration:none; color:#ff6600; font-weight:bold; }
+    .produits { display:flex; gap:20px; flex-wrap:wrap; }
+    .carte { background:#fff; padding:15px; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.1); width:200px; text-align:center; }
+    .carte img { max-width:100%; border-radius:8px; }
+    button { background:#ff6600; color:#fff; border:none; padding:10px; border-radius:6px; cursor:pointer; margin-top:10px; }
+  </style>
 </head>
 <body>
-  <h1>Bienvenue sur NovaShop 🚀</h1>
-  <p>Votre boutique en ligne arrive bientôt !</p>
+  <header>
+    <h1>
+      <img src="images/logo.png" alt="NovaShop">
+      NovaShop 🚀
+    </h1>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="panier.html">🛒 Panier</a>
+    </nav>
+  </header>
+
+  <section class="produits">
+    <div class="carte">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Carte Netflix">
+      <h3>Carte Netflix</h3>
+      <p>25€</p>
+      <button onclick="addToCart('Carte Netflix', 25)">Ajouter au panier</button>
+    </div>
+    <div class="carte">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/PlayStation_logo.svg" alt="Carte PlayStation">
+      <h3>Carte PlayStation</h3>
+      <p>50€</p>
+      <button onclick="addToCart('Carte PlayStation', 50)">Ajouter au panier</button>
+    </div>
+    <div class="carte">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Apple_logo_black.svg" alt="Carte iTunes">
+      <h3>Carte iTunes</h3>
+      <p>15€</p>
+      <button onclick="addToCart('Carte iTunes', 15)">Ajouter au panier</button>
+    </div>
+  </section>
+
+  <script src="cart.js"></script>
 </body>
-</<header>
-  <h1>Bienvenue sur NovaShop 🚀</h1>
-  <p>Vos cartes cadeaux préférées au meilleur prix</p>
-  <p><a href="contact.html" style="color: #FFD700;">📞 Contactez-nous</a></p>
-</header>
+</html>
