@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NovaShop – Cartes & Abonnements</title>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <div class="brand">🛒 NovaShop</div>
+    <div class="title"></div>
+    <div class="space"></div>
+    <div class="toolbar">
+      <span>👤 <span data-user></span></span>
+      <select id="currencySelect" class="select">
+        <option value="EUR">EUR €</option>
+        <option value="FCFA">FCFA</option>
+      </select>
+      <a class="btn" href="cart.html">Panier <span class="badge" data-cart-badge>0</span></a>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <h1>Cartes & Abonnements</h1>
+  <p class="muted">Choisissez vos cartes officielles (PSN, Xbox, Steam, etc.). Connexion Google requise avant achat.</p>
+  <div id="grid" class="grid"></div>
+</div>
+
+<div class="footer">
+  <small class="muted">Démo front‑end. Les logos sont des placeholders. Remplacez par vos visuels sous licences adaptées.</small>
+</div>
+
+<script src="app.js"></script>
+<script>
+NS.renderHeader("Boutique");
+NS.loadProducts();
+</script>
+</body>
+</html>

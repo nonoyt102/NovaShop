@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Connexion – NovaShop</title>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <div class="brand">🛒 NovaShop</div>
+    <div class="title"></div>
+    <div class="space"></div>
+    <div class="toolbar">
+      <span>👤 <span data-user></span></span>
+      <select id="currencySelect" class="select">
+        <option value="EUR">EUR €</option>
+        <option value="FCFA">FCFA</option>
+      </select>
+      <a class="btn" href="cart.html">Panier <span class="badge" data-cart-badge>0</span></a>
+    </div>
+  </div>
+</header>
+
+<div class="container" style="padding:20px">
+  <h1>Connexion</h1>
+  <p>Démo : la connexion Google réelle nécessite un backend OAuth. Ici, entrez votre email et cliquez sur "Se connecter avec Google".</p>
+  <div class="toolbar">
+    <input id="email" type="email" placeholder="votre.email@gmail.com"/>
+    <button id="googleBtn" class="btn"><img src="assets/appstore.svg" style="width:20px;height:20px"> Se connecter avec Google</button>
+  </div>
+  <p><a class="btn" href="index.html">← Retour à la boutique</a></p>
+</div>
+
+<div class="footer">
+  <small class="muted">Démo front‑end. Les logos sont des placeholders. Remplacez par vos visuels sous licences adaptées.</small>
+</div>
+
+<script src="app.js"></script>
+<script>
+NS.renderHeader("Connexion");
+document.getElementById("googleBtn").addEventListener("click", ()=>{
+  const email = document.getElementById("email").value.trim();
+  if(!email.includes("@")) return alert("Entrez un email valide.");
+  NS.user.set(email);
+  alert("Connecté : "+email);
+  location.href="index.html";
+});
+</script>
+</body>
+</html>
