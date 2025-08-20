@@ -1,0 +1,32 @@
+<header>
+  <h1>NovaShop 🚀</h1>
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="panier.html">🛒 Panier (<span id="cartCount">0</span>)</a>
+  </nav>
+</header>
+
+<section class="produits">
+  <div class="carte">
+    <img src="images/robux.jpg" alt="Robux">
+    <h3>Carte Robux</h3>
+    <p>10€</p>
+    <button class="add-to-cart" data-id="robux10" data-name="Carte Robux" data-price="10">Ajouter au panier</button>
+  </div>
+
+  <div class="carte">
+    <img src="images/psn.jpg" alt="PlayStation">
+    <h3>Carte PlayStation</h3>
+    <p>20€</p>
+    <button class="add-to-cart" data-id="psn20" data-name="Carte PlayStation" data-price="20">Ajouter au panier</button>
+  </div>
+
+  <div class="carte">
+    <img src="images/googleplay.jpg" alt="Google Play">
+    <h3>Carte Google Play</h3>
+    <p>15€</p>
+    <button class="add-to-cart" data-id="gplay15" data-name="Carte Google Play" data-price="15">Ajouter au panier</button>
+  </div>
+</section>
+
+<script src="cart.js"></script>
