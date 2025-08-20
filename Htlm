@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovaShop 🚀</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #f4f4f4;
+    }
+    h1 {
+      color: #333;
+    }
+    .produits {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+    .produit {
+      background: white;
+      border-radius: 10px;
+      padding: 15px;
+      margin: 10px;
+      width: 200px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+    .produit:hover {
+      transform: scale(1.05);
+    }
+    .produit img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    .prix {
+      font-weight: bold;
+      color: #e60023;
+    }
+  </style>
+</head>
+<body>
+  <h1>Bienvenue sur NovaShop 🚀</h1>
+  <p>Découvrez nos produits en ligne !</p>
+
+  <div class="produits">
+    <div class="produit">
+      <img src="images/produit1.jpg" alt="Produit 1">
+      <h3>T-shirt NovaShop</h3>
+      <p class="prix">20€</p>
+    </div>
+
+    <div class="produit">
+      <img src="images/produit2.jpg" alt="Produit 2">
+      <h3>Casquette NovaShop</h3>
+      <p class="prix">15€</p>
+    </div>
+
+    <div class="produit">
+      <img src="images/produit3.jpg" alt="Produit 3">
+      <h3>Sac NovaShop</h3>
+      <p class="prix">30€</p>
+    </div>
+  </div>
+</body>
+</html>
